@@ -83,6 +83,9 @@ a:active {
 .required, .post-edit-link, .comment-edit-link {
   color: #cc0033;
 }
+blockquote {
+  border-left: 0.125em solid #ffc300;
+}
 ::selection {
   background: #ffc300;
   color: #000000;
