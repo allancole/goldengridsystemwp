@@ -21,6 +21,7 @@
 					get_the_author()
 				);
 			?>
+			<?php edit_post_link( __( 'Edit', 'ggswp' ), '<span class="sep">|</span> <span class="edit-link">', '</span>' ); ?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->

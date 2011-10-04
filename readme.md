@@ -10,5 +10,6 @@ See http://goldengridsystem.com/ and http://fthrwght.com/ggswp/ for more details
 
 ## Credits
 
-Golden Grid System developed for WordPress by [Allan Cole](http://fthrwght.com/) / [@fthrwght](http://twitter.com/fthrwght/)
-Golden Grid System developed by [Joni Korpi](http://jonikorpi.com/) / [@jonikorpi](http://twitter.com/jonikorpi/). Licensed under [MIT](http://opensource.org/licenses/mit-license.php).
+- Golden Grid System developed for WordPress by [Allan Cole](http://fthrwght.com/) / [@fthrwght](http://twitter.com/fthrwght/)
+- Golden Grid System developed by [Joni Korpi](http://jonikorpi.com/) / [@jonikorpi](http://twitter.com/jonikorpi/). 
+- Licensed under [GPL v3](http://www.opensource.org/licenses/gpl-3.0.html).
