@@ -1,7 +1,7 @@
 <?php
 /**
  * @package WordPress
- * @subpackage The GGS Theme
+ * @subpackage GGS WP
  */
 
 get_header(); ?>
@@ -18,7 +18,7 @@ get_header(); ?>
 						<div class="entry-meta">
 							<?php
 								$metadata = wp_get_attachment_metadata();
-								printf( __( '<span class="meta-prep meta-prep-entry-date">Published </span> <span class="entry-date"><abbr class="published" title="%1$s">%2$s</abbr></span>  at <a href="%3$s" title="Link to full-size image">%4$s &times; %5$s</a> in <a href="%6$s" title="Return to %7$s" rel="gallery">%7$s</a>', 'ggstheme' ),
+								printf( __( '<span class="meta-prep meta-prep-entry-date">Published </span> <span class="entry-date"><abbr class="published" title="%1$s">%2$s</abbr></span>  at <a href="%3$s" title="Link to full-size image">%4$s &times; %5$s</a> in <a href="%6$s" title="Return to %7$s" rel="gallery">%7$s</a>', 'ggswp' ),
 									esc_attr( get_the_time() ),
 									get_the_date(),
 									wp_get_attachment_url(),
@@ -28,12 +28,12 @@ get_header(); ?>
 									get_the_title( $post->post_parent )
 								);
 							?>
-							<?php edit_post_link( __( 'Edit', 'ggstheme' ), '<span class="sep">|</span> <span class="edit-link">', '</span>' ); ?>
+							<?php edit_post_link( __( 'Edit', 'ggswp' ), '<span class="sep">|</span> <span class="edit-link">', '</span>' ); ?>
 						</div><!-- .entry-meta -->
 
 						<nav id="image-navigation">
-							<span class="previous-image"><?php previous_image_link( false, __( '&larr; Previous' , 'ggstheme' ) ); ?></span>
-							<span class="next-image"><?php next_image_link( false, __( 'Next &rarr;' , 'ggstheme' ) ); ?></span>
+							<span class="previous-image"><?php previous_image_link( false, __( '&larr; Previous' , 'ggswp' ) ); ?></span>
+							<span class="next-image"><?php next_image_link( false, __( 'Next &rarr;' , 'ggswp' ) ); ?></span>
 						</nav><!-- #image-navigation -->
 					</header><!-- .entry-header -->
 
@@ -79,21 +79,21 @@ get_header(); ?>
 						</div><!-- .entry-attachment -->
 
 						<?php the_content(); ?>
-						<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'ggstheme' ), 'after' => '</div>' ) ); ?>
+						<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'ggswp' ), 'after' => '</div>' ) ); ?>
 
 					</div><!-- .entry-content -->
 
 					<div class="entry-utility">
 						<?php if ( comments_open() && pings_open() ) : // Comments and trackbacks open ?>
-							<?php printf( __( '<a class="comment-link" href="#respond" title="Post a comment">Post a comment</a> or leave a trackback: <a class="trackback-link" href="%s" title="Trackback URL for your post" rel="trackback">Trackback URL</a>.', 'ggstheme' ), get_trackback_url() ); ?>
+							<?php printf( __( '<a class="comment-link" href="#respond" title="Post a comment">Post a comment</a> or leave a trackback: <a class="trackback-link" href="%s" title="Trackback URL for your post" rel="trackback">Trackback URL</a>.', 'ggswp' ), get_trackback_url() ); ?>
 						<?php elseif ( ! comments_open() && pings_open() ) : // Only trackbacks open ?>
-							<?php printf( __( 'Comments are closed, but you can leave a trackback: <a class="trackback-link" href="%s" title="Trackback URL for your post" rel="trackback">Trackback URL</a>.', 'ggstheme' ), get_trackback_url() ); ?>
+							<?php printf( __( 'Comments are closed, but you can leave a trackback: <a class="trackback-link" href="%s" title="Trackback URL for your post" rel="trackback">Trackback URL</a>.', 'ggswp' ), get_trackback_url() ); ?>
 						<?php elseif ( comments_open() && ! pings_open() ) : // Only comments open ?>
-							<?php _e( 'Trackbacks are closed, but you can <a class="comment-link" href="#respond" title="Post a comment">post a comment</a>.', 'ggstheme' ); ?>
+							<?php _e( 'Trackbacks are closed, but you can <a class="comment-link" href="#respond" title="Post a comment">post a comment</a>.', 'ggswp' ); ?>
 						<?php elseif ( ! comments_open() && ! pings_open() ) : // Comments and trackbacks closed ?>
-							<?php _e( 'Both comments and trackbacks are currently closed.', 'ggstheme' ); ?>
+							<?php _e( 'Both comments and trackbacks are currently closed.', 'ggswp' ); ?>
 						<?php endif; ?>
-						<?php edit_post_link( __( 'Edit', 'ggstheme' ), ' <span class="edit-link">', '</span>' ); ?>
+						<?php edit_post_link( __( 'Edit', 'ggswp' ), ' <span class="edit-link">', '</span>' ); ?>
 					</div><!-- .entry-utility -->
 				</article><!-- #post-<?php the_ID(); ?> -->
 

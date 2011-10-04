@@ -56,9 +56,9 @@ define('STYLEURL', get_bloginfo('stylesheet_url'));
  * Make theme available for translation
  * Translations can be filed in the /languages/ directory
  * If you're building a theme based on The GGS Theme, use a find and replace
- * to change 'ggstheme' to the name of your theme in all the template files
+ * to change 'ggswp' to the name of your theme in all the template files
  */
-load_theme_textdomain( 'ggstheme', TEMPLATEPATH . '/languages' );
+load_theme_textdomain( 'ggswp', TEMPLATEPATH . '/languages' );
 
 $locale = get_locale();
 $locale_file = TEMPLATEPATH . "/languages/$locale.php";
@@ -75,7 +75,7 @@ if ( ! isset( $content_width ) )
  * This theme uses wp_nav_menu() in one location.
  */
 register_nav_menus( array(
-	'primary' => __( 'Primary Menu', 'ggstheme' ),
+	'primary' => __( 'Primary Menu', 'ggswp' ),
 ) );
 
 /**
@@ -99,9 +99,9 @@ function ggstheme_widgets_init() {
 
 	// Primary
 	register_sidebar( array (
-		'name' => __( 'Primary Sidebar', 'ggstheme' ),
+		'name' => __( 'Primary Sidebar', 'ggswp' ),
 		'id' => 'primary-sidebar-1',
-		'description' => __( 'The main sidebar for the right side column', 'ggstheme' ),
+		'description' => __( 'The main sidebar for the right side column', 'ggswp' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => "</aside>",
 		'before_title' => '<h3 class="widget-title">',
@@ -110,9 +110,9 @@ function ggstheme_widgets_init() {
 
 	// Secondary
 	register_sidebar( array(
-		'name' => __( 'Secondary Sidebar Area One', 'ggstheme' ),
+		'name' => __( 'Secondary Sidebar Area One', 'ggswp' ),
 		'id' => 'secondary-sidebar-1',
-		'description' => __( 'An optional widget area for your site footer', 'ggstheme' ),
+		'description' => __( 'An optional widget area for your site footer', 'ggswp' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => "</aside>",
 		'before_title' => '<h3 class="widget-title">',
@@ -120,9 +120,9 @@ function ggstheme_widgets_init() {
 	) );
 
 	register_sidebar( array(
-		'name' => __( 'Secondary Sidebar Area Two', 'ggstheme' ),
+		'name' => __( 'Secondary Sidebar Area Two', 'ggswp' ),
 		'id' => 'secondary-sidebar-2',
-		'description' => __( 'An optional widget area for your site footer', 'ggstheme' ),
+		'description' => __( 'An optional widget area for your site footer', 'ggswp' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => "</aside>",
 		'before_title' => '<h3 class="widget-title">',
@@ -131,9 +131,9 @@ function ggstheme_widgets_init() {
 
 	// Tertiary
 	register_sidebar( array(
-		'name' => __( 'Tertiary Sidebar Area One', 'ggstheme' ),
+		'name' => __( 'Tertiary Sidebar Area One', 'ggswp' ),
 		'id' => 'tertiary-sidebar-1',
-		'description' => __( 'An optional widget area for your site footer', 'ggstheme' ),
+		'description' => __( 'An optional widget area for your site footer', 'ggswp' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => "</aside>",
 		'before_title' => '<h3 class="widget-title">',
@@ -141,9 +141,9 @@ function ggstheme_widgets_init() {
 	) );
 
 	register_sidebar( array(
-		'name' => __( 'Tertiary Sidebar Area Two', 'ggstheme' ),
+		'name' => __( 'Tertiary Sidebar Area Two', 'ggswp' ),
 		'id' => 'tertiary-sidebar-2',
-		'description' => __( 'An optional widget area for your site footer', 'ggstheme' ),
+		'description' => __( 'An optional widget area for your site footer', 'ggswp' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => "</aside>",
 		'before_title' => '<h3 class="widget-title">',
@@ -151,9 +151,9 @@ function ggstheme_widgets_init() {
 	) );
 
 	register_sidebar( array(
-		'name' => __( 'Tertiary Sidebar Area Three', 'ggstheme' ),
+		'name' => __( 'Tertiary Sidebar Area Three', 'ggswp' ),
 		'id' => 'tertiary-sidebar-3',
-		'description' => __( 'An optional widget area for your site footer', 'ggstheme' ),
+		'description' => __( 'An optional widget area for your site footer', 'ggswp' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => "</aside>",
 		'before_title' => '<h3 class="widget-title">',
@@ -162,9 +162,9 @@ function ggstheme_widgets_init() {
 
 	// Quaternary
 	register_sidebar( array(
-		'name' => __( 'Quaternary Sidebar Area One', 'ggstheme' ),
+		'name' => __( 'Quaternary Sidebar Area One', 'ggswp' ),
 		'id' => 'quaternary-sidebar-1',
-		'description' => __( 'An optional widget area for your site footer', 'ggstheme' ),
+		'description' => __( 'An optional widget area for your site footer', 'ggswp' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => "</aside>",
 		'before_title' => '<h3 class="widget-title">',
@@ -172,9 +172,9 @@ function ggstheme_widgets_init() {
 	) );
 
 	register_sidebar( array(
-		'name' => __( 'Quaternary Sidebar Area Two', 'ggstheme' ),
+		'name' => __( 'Quaternary Sidebar Area Two', 'ggswp' ),
 		'id' => 'quaternary-sidebar-2',
-		'description' => __( 'An optional widget area for your site footer', 'ggstheme' ),
+		'description' => __( 'An optional widget area for your site footer', 'ggswp' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => "</aside>",
 		'before_title' => '<h3 class="widget-title">',
@@ -182,9 +182,9 @@ function ggstheme_widgets_init() {
 	) );
 
 	register_sidebar( array(
-		'name' => __( 'Quaternary Sidebar Area Three', 'ggstheme' ),
+		'name' => __( 'Quaternary Sidebar Area Three', 'ggswp' ),
 		'id' => 'quaternary-sidebar-3',
-		'description' => __( 'An optional widget area for your site footer', 'ggstheme' ),
+		'description' => __( 'An optional widget area for your site footer', 'ggswp' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => "</aside>",
 		'before_title' => '<h3 class="widget-title">',
@@ -192,9 +192,9 @@ function ggstheme_widgets_init() {
 	) );
 
 	register_sidebar( array(
-		'name' => __( 'Quaternary Sidebar Area Four', 'ggstheme' ),
+		'name' => __( 'Quaternary Sidebar Area Four', 'ggswp' ),
 		'id' => 'quaternary-sidebar-4',
-		'description' => __( 'An optional widget area for your site footer', 'ggstheme' ),
+		'description' => __( 'An optional widget area for your site footer', 'ggswp' ),
 		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
 		'after_widget' => "</aside>",
 		'before_title' => '<h3 class="widget-title">',

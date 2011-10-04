@@ -1,7 +1,7 @@
 <?php
 /**
  * @package WordPress
- * @subpackage The GGS Theme
+ * @subpackage GGS WP
  */
 ?>
 
@@ -11,12 +11,12 @@
 
 		<div class="entry-meta">
 			<?php
-				printf( __( '<span class="sep">Posted on </span><a href="%1$s" rel="bookmark"><time class="entry-date" datetime="%2$s" pubdate>%3$s</time></a> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="%4$s" title="%5$s">%6$s</a></span>', 'ggstheme' ),
+				printf( __( '<span class="sep">Posted on </span><a href="%1$s" rel="bookmark"><time class="entry-date" datetime="%2$s" pubdate>%3$s</time></a> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="%4$s" title="%5$s">%6$s</a></span>', 'ggswp' ),
 					get_permalink(),
 					get_the_date( 'c' ),
 					get_the_date(),
 					get_author_posts_url( get_the_author_meta( 'ID' ) ),
-					sprintf( esc_attr__( 'View all posts by %s', 'ggstheme' ), get_the_author() ),
+					sprintf( esc_attr__( 'View all posts by %s', 'ggswp' ), get_the_author() ),
 					get_the_author()
 				);
 			?>
@@ -25,16 +25,16 @@
 
 	<div class="entry-content">
 		<?php the_content(); ?>
-		<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'ggstheme' ), 'after' => '</div>' ) ); ?>
+		<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'ggswp' ), 'after' => '</div>' ) ); ?>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-meta">
 		<?php
 			$tag_list = get_the_tag_list( '', ', ' );
 			if ( '' != $tag_list ) {
-				$utility_text = __( 'This entry was posted in %1$s and tagged %2$s. Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', 'ggstheme' );
+				$utility_text = __( 'This entry was posted in %1$s and tagged %2$s. Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', 'ggswp' );
 			} else {
-				$utility_text = __( 'This entry was posted in %1$s. Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', 'ggstheme' );
+				$utility_text = __( 'This entry was posted in %1$s. Bookmark the <a href="%3$s" title="Permalink to %4$s" rel="bookmark">permalink</a>.', 'ggswp' );
 			}
 			printf(
 				$utility_text,
@@ -45,6 +45,6 @@
 			);
 		?>
 
-		<?php edit_post_link( __( 'Edit', 'ggstheme' ), '<span class="edit-link">', '</span>' ); ?>
+		<?php edit_post_link( __( 'Edit', 'ggswp' ), '<span class="edit-link">', '</span>' ); ?>
 	</footer><!-- .entry-meta -->
 </article><!-- #post-<?php the_ID(); ?> -->

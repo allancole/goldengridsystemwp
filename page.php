@@ -1,7 +1,7 @@
 <?php
 /**
  * @package WordPress
- * @subpackage The GGS Theme
+ * @subpackage GGS WP
  */
 
 get_header(); ?>

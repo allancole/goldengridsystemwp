@@ -1,7 +1,7 @@
 <?php
 /**
  * @package WordPress
- * @subpackage The GGS Theme
+ * @subpackage GGS WP
  */
 
 get_header(); ?>
@@ -12,9 +12,9 @@ get_header(); ?>
 				<?php /* Display navigation to next/previous pages when applicable */ ?>
 				<?php if ( $wp_query->max_num_pages > 1 ) : ?>
 					<nav id="nav-above">
-						<h1 class="section-heading"><?php _e( 'Post navigation', 'ggstheme' ); ?></h1>
-						<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'ggstheme' ) ); ?></div>
-						<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'ggstheme' ) ); ?></div>
+						<h1 class="section-heading"><?php _e( 'Post navigation', 'ggswp' ); ?></h1>
+						<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'ggswp' ) ); ?></div>
+						<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'ggswp' ) ); ?></div>
 					</nav><!-- #nav-above -->
 				<?php endif; ?>
 				
@@ -28,9 +28,9 @@ get_header(); ?>
 				<?php /* Display navigation to next/previous pages when applicable */ ?>
 				<?php if (  $wp_query->max_num_pages > 1 ) : ?>
 					<nav id="nav-below">
-						<h1 class="section-heading"><?php _e( 'Post navigation', 'ggstheme' ); ?></h1>
-						<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'ggstheme' ) ); ?></div>
-						<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'ggstheme' ) ); ?></div>
+						<h1 class="section-heading"><?php _e( 'Post navigation', 'ggswp' ); ?></h1>
+						<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'ggswp' ) ); ?></div>
+						<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'ggswp' ) ); ?></div>
 					</nav><!-- #nav-below -->
 				<?php endif; ?>				
 

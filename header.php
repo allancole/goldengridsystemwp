@@ -30,7 +30,7 @@
 
 	// Add a page number if necessary:
 	if ( $paged >= 2 || $page >= 2 )
-		echo ' | ' . sprintf( __( 'Page %s', 'ggstheme' ), max( $paged, $page ) );
+		echo ' | ' . sprintf( __( 'Page %s', 'ggswp' ), max( $paged, $page ) );
 
 	?></title>
 
@@ -62,8 +62,8 @@
 			</hgroup>
 
 			<nav id="access" role="navigation" class="wrapper">
-				<h1 class="section-heading"><?php _e( 'Main menu', 'ggstheme' ); ?></h1>
-				<div class="skip-link screen-reader-text"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'ggstheme' ); ?>"><?php _e( 'Skip to content', 'ggstheme' ); ?></a></div>
+				<h1 class="section-heading"><?php _e( 'Main menu', 'ggswp' ); ?></h1>
+				<div class="skip-link screen-reader-text"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'ggswp' ); ?>"><?php _e( 'Skip to content', 'ggswp' ); ?></a></div>
 
 				<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 			</nav><!-- #access -->

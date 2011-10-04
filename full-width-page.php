@@ -4,7 +4,7 @@
  * Description: A full-width template with no sidebar
  *
  * @package WordPress
- * @subpackage The GGS Theme
+ * @subpackage GGS WP
  */
 
 get_header(); ?>

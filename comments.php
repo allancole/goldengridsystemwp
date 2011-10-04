@@ -1,7 +1,7 @@
 <?php
 /**
  * @package WordPress
- * @subpackage The GGS Theme
+ * @subpackage GGS WP
  */
 
 if ( ! function_exists( 'ggstheme_comment' ) ) :
@@ -24,10 +24,10 @@ function ggstheme_comment( $comment, $args, $depth ) {
 			<header>
 				<div class="comment-author vcard">
 					<?php echo get_avatar( $comment, 48 ); ?>
-					<?php printf( __( '%s', 'ggstheme' ), sprintf( '<cite class="fn">%s</cite>', get_comment_author_link() ) ); ?>
+					<?php printf( __( '%s', 'ggswp' ), sprintf( '<cite class="fn">%s</cite>', get_comment_author_link() ) ); ?>
 				</div><!-- .comment-author .vcard -->
 				<?php if ( $comment->comment_approved == '0' ) : ?>
-					<em><?php _e( 'Your comment is awaiting moderation.', 'ggstheme' ); ?></em>
+					<em><?php _e( 'Your comment is awaiting moderation.', 'ggswp' ); ?></em>
 					<br />
 				<?php endif; ?>
 
@@ -35,9 +35,9 @@ function ggstheme_comment( $comment, $args, $depth ) {
 					<a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>"><time pubdate datetime="<?php comment_time( 'c' ); ?>">
 					<?php
 						/* translators: 1: date, 2: time */
-						printf( __( '%1$s at %2$s', 'ggstheme' ), get_comment_date(),  get_comment_time() ); ?>
+						printf( __( '%1$s at %2$s', 'ggswp' ), get_comment_date(),  get_comment_time() ); ?>
 					</time></a>
-					<?php edit_comment_link( __( 'Edit', 'ggstheme' ), '<span class="edit-link">', '</span>' ); ?>
+					<?php edit_comment_link( __( 'Edit', 'ggswp' ), '<span class="edit-link">', '</span>' ); ?>
 				</div><!-- .comment-meta .commentmetadata -->
 			</header>
 
@@ -54,7 +54,7 @@ function ggstheme_comment( $comment, $args, $depth ) {
 		case 'trackback' :
 	?>
 	<li class="post pingback">
-		<p><?php _e( 'Pingback:', 'ggstheme' ); ?> <?php comment_author_link(); ?><?php edit_comment_link( __( 'Edit', 'ggstheme' ), '<span class="edit-link">', '</span>' ); ?></p>
+		<p><?php _e( 'Pingback:', 'ggswp' ); ?> <?php comment_author_link(); ?><?php edit_comment_link( __( 'Edit', 'ggswp' ), '<span class="edit-link">', '</span>' ); ?></p>
 	<?php
 			break;
 	endswitch;
@@ -65,7 +65,7 @@ endif; // ends check for ggstheme_comment()
 
 	<div id="comments">
 	<?php if ( post_password_required() ) : ?>
-		<div class="nopassword"><?php _e( 'This post is password protected. Enter the password to view any comments.', 'ggstheme' ); ?></div>
+		<div class="nopassword"><?php _e( 'This post is password protected. Enter the password to view any comments.', 'ggswp' ); ?></div>
 	</div><!-- .comments -->
 	<?php return;
 		endif;
@@ -76,16 +76,16 @@ endif; // ends check for ggstheme_comment()
 	<?php if ( have_comments() ) : ?>
 		<h3 id="comments-title">
 			<?php
-			    printf( _n( 'One Response to %2$s', '%1$s Responses to %2$s', get_comments_number(), 'ggstheme' ),
+			    printf( _n( 'One Response to %2$s', '%1$s Responses to %2$s', get_comments_number(), 'ggswp' ),
 			        number_format_i18n( get_comments_number() ), '<em>' . get_the_title() . '</em>' );
 			?>
 		</h3>
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
 		<nav id="comment-nav-above">
-			<h1 class="section-heading"><?php _e( 'Comment navigation', 'ggstheme' ); ?></h1>
-			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'ggstheme' ) ); ?></div>
-			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'ggstheme' ) ); ?></div>
+			<h1 class="section-heading"><?php _e( 'Comment navigation', 'ggswp' ); ?></h1>
+			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'ggswp' ) ); ?></div>
+			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'ggswp' ) ); ?></div>
 		</nav>
 		<?php endif; // check for comment navigation ?>
 
@@ -95,9 +95,9 @@ endif; // ends check for ggstheme_comment()
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through ?>
 		<nav id="comment-nav-below">
-			<h1 class="section-heading"><?php _e( 'Comment navigation', 'ggstheme' ); ?></h1>
-			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'ggstheme' ) ); ?></div>
-			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'ggstheme' ) ); ?></div>
+			<h1 class="section-heading"><?php _e( 'Comment navigation', 'ggswp' ); ?></h1>
+			<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments', 'ggswp' ) ); ?></div>
+			<div class="nav-next"><?php next_comments_link( __( 'Newer Comments &rarr;', 'ggswp' ) ); ?></div>
 		</nav>
 		<?php endif; // check for comment navigation ?>
 
@@ -113,7 +113,7 @@ endif; // ends check for ggstheme_comment()
 			 */
 			if ( ! comments_open() && ! is_page() ) :
 			?>
-			<p class="nocomments"><?php _e( 'Comments are closed.', 'ggstheme' ); ?></p>
+			<p class="nocomments"><?php _e( 'Comments are closed.', 'ggswp' ); ?></p>
 			<?php endif; // end ! comments_open() && ! is_page() ?>
 
 
