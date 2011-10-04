@@ -5,27 +5,6 @@
  */
 ?>
 
-		<?php
-			/* A sidebar in the footer? Yep. You can can customize
-			 * your footer with three columns of widgets.
-			 */
-			get_sidebar( 'secondary' );
-		?>
-
-		<?php
-			/* A sidebar in the footer? Yep. You can can customize
-			 * your footer with three columns of widgets.
-			 */
-			get_sidebar( 'tertiary' );
-		?>
-
-		<?php
-			/* A sidebar in the footer? Yep. You can can customize
-			 * your footer with three columns of widgets.
-			 */
-			get_sidebar( 'quarternary' );
-		?>
-
 	</div><!-- #main -->
 
 	<footer id="colophon" role="contentinfo">

@@ -40,6 +40,7 @@ sup{ top:-0.5em; }
 sub{ bottom:-0.25em; }
 pre{ white-space:pre;  white-space:pre-wrap;  word-wrap:break-word; }
 b, strong{ font-weight:bold; }
+blockquote {margin-left: 6.25%; padding-left: 6.25%;}
 abbr[title]{ border-bottom:1px dotted; }
 input, textarea, button, select{ margin:0;  font-size:100%;  line-height:normal;  vertical-align:baseline; }
 button, html input[type="button"], input[type="reset"], input[type="submit"]{ cursor:pointer;  -webkit-appearance:button; font-weight: 800}
@@ -80,7 +81,7 @@ body{ /* 16px / 24px */ font-size:1em;  line-height:1.5em; }
 *
 */
 header, #main, footer{ margin:0 5.555555555555555%; }
-#container, #secondary, #tertiary, #quarternary {width: 100%; float: none; clear: both}
+#container, #secondary, #tertiary, #quarternary, #main #container.full-width {width: 100%; float: none; clear: both}
 h1, h2{ margin:0.9230769230769231em 0 1.3846153846153846em; }
 h2{ font-weight:normal; }
 h3{ margin:1.5em 0 1.5em; }

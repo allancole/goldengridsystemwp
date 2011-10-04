@@ -16,7 +16,7 @@ get_header(); ?>
 				<?php comments_template( '', true ); ?>
 
 			</div><!-- #content -->
-		</div><!-- #primary -->
+		</div><!-- #container -->
 
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

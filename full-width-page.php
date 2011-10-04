@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Full-width, no sidebar
+ * Template Name: Full-width Page
  * Description: A full-width template with no sidebar
  *
  * @package WordPress
@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-		<div id="container" class="full-width">
+		<div id="container" class="wrapper full-width">
 			<div id="content" role="main">
 
 				<?php the_post(); ?>
@@ -19,6 +19,6 @@ get_header(); ?>
 				<?php comments_template( '', true ); ?>
 
 			</div><!-- #content -->
-		</div><!-- #primary -->
+		</div><!-- #container -->
 
 <?php get_footer(); ?>
