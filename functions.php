@@ -22,12 +22,12 @@
 
 // Get Theme and Child Theme Data
 // Credits: Joern Kretzschmar & Thematic http://themeshaper.com/thematic
-$themeData = get_theme_data(TEMPLATEPATH . '/style.css');
+$themeData = wp_get_theme(TEMPLATEPATH . '/style.css');
 $version = trim($themeData['Version']);
 if(!$version)
     $version = "unknown";
 
-$childeThemeData = get_theme_data(STYLESHEETPATH . '/style.css');
+$childeThemeData = wp_get_theme(STYLESHEETPATH . '/style.css');
 $templateversion = trim($childeThemeData['Version']);
 if(!$templateversion)
     $templateversion = "unknown";
@@ -256,5 +256,3 @@ function enqueue_less_styles($tag, $handle) {
     return $tag;
 }
 // add_filter( 'style_loader_tag', 'enqueue_less_styles', 5, 2);
-
-
